@@ -1,0 +1,26 @@
+[
+  {
+    "image": "https://blog.redbus.co/wp-content/uploads/2018/11/Nevado_del_Ruiz_-_Milton_H_Arias-768x356.jpg",
+    "name": "Parque Nacional Los Nevados",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet ac metus vitae blandit. Donec quis mauris eleifend, fermentum felis sed, euismod dui. Quisque convallis elit arcu, at vulputate neque lacinia molestie. Sed aliquet sapien at condimentum vehicula.",
+    "location": "Cordillera Central de los Andes Colombianos"
+  },
+  {
+    "image": "https://fincasquindioya.com/wp-content/uploads/2017/01/parque_cafe_001-1536x864.jpg",
+    "name": "Parque del Café",
+    "description": "In hac habitasse platea dictumst. Morbi est neque, pharetra non neque non, tristique dapibus mauris. Aenean id mi ac nisl dignissim elementum. Curabitur fringilla auctor egestas. Cras ac vehicula est. Morbi auctor diam id pharetra facilisis. ",
+    "location": "Quindío"
+  },
+  {
+    "image": "https://viajareacolombia.com/wp-content/uploads/2020/07/catedral-de-manizales-1000x733.jpg",
+    "name": "Basílica de Nuestra Señora del Rosario",
+    "description": "Pellentesque at luctus ipsum. Quisque id arcu ac tellus condimentum mollis. Nullam sit amet nulla ut massa congue molestie non nec lectus. Sed vitae est tincidunt, viverra justo eu, dictum mi. Donec a porttitor massa. ",
+    "location": "Manizales"
+  },
+  {
+    "image": "https://belalcazarcaldas.micolombiadigital.gov.co/sites/belalcazarcaldas/content/files/000442/22099_monumento-a-cristo-rey-belalcazar-caldas-colombia_1024x600.jpg",
+    "name": "Monumento Cristo Rey",
+    "description":"Proin mauris quam, malesuada quis risus sed, convallis posuere dui. Etiam vel nulla nec orci dignissim convallis. Morbi mi metus, aliquam in ante id, sodales ullamcorper ante. Maecenas non risus elit. Mauris sed justo vel odio volutpat vehicula ac eu orci. ",
+    "location": "Belalcázar"
+  }
+]
