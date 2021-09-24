@@ -26,8 +26,9 @@ class Fragment2 : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        //se debe comprobar que la actividad principal implemente el comunicador
-        /*if(context is FragmentCom){
+        /*para enviar datos desde el fragment al activity
+        se debe comprobar que la actividad principal implemente el comunicador
+        if(context is FragmentCom){
             activityCont = context
         }
         else throw RuntimeException(context.toString() + "must implement FragmentCom")*/
