@@ -2,23 +2,24 @@ package com.example.fragments
 
 import android.content.Context
 import android.os.Bundle
-import androidx.fragment.app.*
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.*
 import com.example.fragments.databinding.Fragment2LayoutBinding
 import java.lang.RuntimeException
 
 class Fragment2 : Fragment() {
 
-    private lateinit var binding:Fragment2LayoutBinding
-    private var activityCont:FragmentCom? = null
+    private lateinit var binding: Fragment2LayoutBinding
+    private var activityCont: FragmentCom? = null
 
     /*para enviar datos a la actividad principal debe tener ciertos parametros
     para esto, se crea una interface y se heredan en la actividad principal */
 
-    interface FragmentCom{
-        fun returnData(data:String)
+    interface FragmentCom {
+        fun returnData(data: String)
     }
 
     //cuando se crea el fragmento
@@ -26,10 +27,10 @@ class Fragment2 : Fragment() {
     override fun onAttach(context: Context) {
         super.onAttach(context)
         //se debe comprobar que la actividad principal implemente el comunicador
-        if(context is FragmentCom){
+        /*if(context is FragmentCom){
             activityCont = context
         }
-        else throw RuntimeException(context.toString() + "must implement FragmentCom")
+        else throw RuntimeException(context.toString() + "must implement FragmentCom")*/
     }
 
     //cuando se destruye el fragmento
@@ -48,7 +49,7 @@ class Fragment2 : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = Fragment2LayoutBinding.inflate(layoutInflater,container,false)
+        binding = Fragment2LayoutBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
@@ -56,13 +57,19 @@ class Fragment2 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         //se crear el listener del boton
+        binding.btnEnviarDato.setOnClickListener {
 
-        binding.btnEnviarDato.setOnClickListener{
+            //change parent fragment container to fragment1
+
+            val trans = parentFragmentManager.beginTransaction()
+            val frag = Fragment1()
+            trans.replace(R.id.frag, frag)
+            trans.commit()
 
             /*si no es nulo ? haga {code}
-            no es nulo !!*/
+            no es nulo !!
 
-            activityCont!!.returnData(binding.etDato.text.toString())
+            activityCont!!.returnData(binding.etDato.text.toString())*/
         }
 
     }

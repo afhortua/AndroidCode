@@ -3,11 +3,12 @@ package com.example.fragments
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.fragments.databinding.ActivityMainBinding
-import androidx.fragment.*
+import com.example.fragments.databinding.Fragment2LayoutBinding
 
 class MainActivity : AppCompatActivity(),Fragment2.FragmentCom {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var binding2: Fragment2LayoutBinding
     private var numFrag=0
 
     override fun onCreate(savedInstanceState: Bundle?) {
